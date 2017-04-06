@@ -15,15 +15,15 @@ Set up a form like this:
   <!-- Inputs here -->
 </form>
 ```
-Replace `testing` in the `action` with the name of the form. You can call a form anything you want, except `view` (you'll see why in the next section.
+Replace `testing` in the `action` with the name of the form. You can call a form anything you want, except `view` (you'll see why in the next section).
 
 When you submit the form, you'll be taken to a page where you can review the submission
 
 ### Looking at a form later!
 
-If you visit http://uforms.tk/view, you can see all of the tables you have created
+If you visit [http://uforms.tk/view](http://uforms.tk/view), you can see all of the tables you have created
 
-If you visit http://uforms.tk/<form> (and replace `<form>` with the form's name), you can see all of your previous submissions for that form.
+If you visit `http://uforms.tk/<form>` (and replace `<form>` with a form's name), you can see all of your previous submissions for that form.
 
 ### Why isn't my form there?
 
@@ -32,7 +32,7 @@ This website uses your browsers *local storage* to save forms. So forms are save
 ### FAQ
 
 #### Q: What does the `.tk` in the URL mean?  
-**A:** Nothing. It was free though! http://www.freenom.com/en/index.html?lang=en
+**A:** Nothing. It was free though! [www.freenom.com](http://www.freenom.com/en/index.html?lang=en)
 
 #### Q: How does this website work?  
 **A:** You can view the code for this website [here](https://github.com/SidneyNemzer/forms)
@@ -41,4 +41,4 @@ To be specific, it uses **Github Pages** for static site hosing, **RequireJS** t
 
 ### Author
 
-This site was created by Sidney Nemzer. Inspired by https://ufor.ms and Github.
+This site was created by Sidney Nemzer. Inspired by [https://ufor.ms](https://ufor.ms) and Github.
