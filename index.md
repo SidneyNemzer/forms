@@ -2,40 +2,43 @@
 title: Forms
 ---
 
-## Index Page
+## Welcome to Forms!
 
-You can use the [editor on GitHub](https://github.com/SidneyNemzer/forms/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This website lets you quickly test an HTML form
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How to use it
 
-### Markdown
+Set up a form like this:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```html
+<form action="http://uforms.tk/testing" method="GET">
+  <!-- Inputs here -->
+</form>
 ```
+Replace `testing` in the `action` with the name of the form. You can call a form anything you want, except `view` (you'll see why in the next section).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+When you submit the form, you'll be taken to a page where you can review the submission
 
-### Jekyll Themes
+### Looking at a form later!
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SidneyNemzer/forms/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+If you visit [http://uforms.tk/view](http://uforms.tk/view), you can see all of the tables you have created
 
-### Support or Contact
+If you visit `http://uforms.tk/<form>` (and replace `<form>` with a form's name), you can see all of your previous submissions for that form.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Why isn't my form there?
+
+This website uses your browsers *local storage* to save forms. So forms are saved *per browser* (and therefore per computer). You can only view a form on the browser you submitted it to.
+
+### FAQ
+
+#### Q: What does the `.tk` in the URL mean?  
+**A:** Nothing. It was free though! [www.freenom.com](http://www.freenom.com/en/index.html?lang=en)
+
+#### Q: How does this website work?  
+**A:** You can view the code for this website [here](https://github.com/SidneyNemzer/forms)
+
+To be specific, it uses **Github Pages** for static site hosing, **RequireJS** to manage files, and **BackboneJS** to manage the data and what you see. To make all pages redirect to a single place, I took advantage of the `404.html` page (that is, all urls except this page's are invalid, so they go to `404.html` automatically).
+
+### Author
+
+This site was created by Sidney Nemzer. Inspired by [https://ufor.ms](https://ufor.ms) and Github.
