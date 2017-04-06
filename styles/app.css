@@ -1,0 +1,146 @@
+body {
+  background-color: white;
+  font-family: "Segoe UI";
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(120deg, #155799, #159957);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+header a {
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.25rem;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em
+}
+
+button.warning {
+  color: #cb2431;
+  background-color: #fafbfc;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.breadcrumbs .forms {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+.breadcrumbs > :not(:first-child)::before {
+  content: " > ";
+}
+.breadcrumbs .current {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.table-browser {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 3px;
+  color: #6a737d;
+}
+.table-browser thead {
+  color: black;
+  background-color: #f1f8ff;
+  border: 1px solid #c8e1ff;
+}
+.table-browser tbody tr {
+  border: 1px solid #eaecef;
+  cursor: pointer;
+}
+.table-browser tbody tr:hover {
+  background-color: #f6f8fa;
+}
+.table-browser td {
+  padding: 6px 10px 6px 10px;
+}
+.table-browser .name {
+  color: #0366d6;
+}
+.table-browser .name:hover {
+  text-decoration: underline;
+}
+.table-browser .total-submissions {
+  text-align: center
+}
+.table-browser .total-submissions:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+.table-browser .time {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4)
+}
+.modal {
+  background-color: whitesmoke;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 30px;
+  position: relative;
+}
+.modal h1 {
+  margin: 0;
+}
+.modal .close {
+  color: gray;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+.modal .close:hover {
+  color: red;
+  cursor: pointer;
+}
+.query-table {
+  width: 100%;
+  margin: auto;
+}
+.query-table th {
+  background-color: gray;
+  color: white;
+  font-size: 1.2em;
+}
+.query-table td {
+  background-color: lightgray;
+}
