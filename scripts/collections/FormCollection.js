@@ -15,6 +15,7 @@ define([
     
     initialize() {
       // TODO use arrow functions instead of `self`
+      // Are these even needed anyway?
       
       const self = this
       this.models.forEach(function (tableModel) {
@@ -25,7 +26,6 @@ define([
       })
       
       this.listenTo(this, 'add', function(tableModel) {
-        console.log('FormCollecton: new form added')
         self.listenTo(tableModel.attributes.queryCollection, 'change', function() {
           console.log('FormCollecton: saving...')
           tableModel.save()
