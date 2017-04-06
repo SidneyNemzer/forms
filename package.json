@@ -22,7 +22,8 @@
       "jquery/dist/*",
       "underscore",
       "backbone",
-      "backbone.localstorage/*.js"
+      "backbone.localstorage/*.js",
+      "requirejs/*.js"
     ]
   }
 }
