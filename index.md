@@ -21,7 +21,7 @@ When you submit the form, you'll be taken to a page where you can review the sub
 
 ### Looking at a form later!
 
-If you visit [https://sidneynemzer.github.io/forms/view][], you can see all of the tables you have created
+If you visit https://sidneynemzer.github.io/forms/view, you can see all of the tables you have created
 
 If you visit `https://sidneynemzer.github.io/forms/<form>` (and replace `<form>` with a form's name), you can see all of your previous submissions for that form.
 
